@@ -1,0 +1,31 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Agregar Tarea</title>
+        </head>
+        <body>
+            <form action="/registros" method="POST" id="tareaform">
+                <h1>Agregar Calificacion</h1>
+                <label>Nombre Alumno:</label>
+                <input type="text" name="alumno" value=""><br>
+                <label>Calificacion:</label>
+                <input type="number" name="calificacion" value=""><br>
+                <label>Materia:</label>
+                <input type="text" name="materia" value=""><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <form action="/promedioAlumno" method="POST" id="promedioAlumno">
+                <h1>Buscar Promedio Alumno</h1>
+                <label>Nombre Alumno:</label>
+                <input type="text" name="alumno" value=""><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <form action="/promMateria" method="POST" id="promedioMateria">
+                <h1>Buscar Promedio Materia</h1>
+                <label>Nombre Materia:</label>
+                <input type="text" name="materia" value=""><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <br><a href="/promGeneral"><h1>Mostrar Promedio General</h1></a>
+        </body>
+    </html>
